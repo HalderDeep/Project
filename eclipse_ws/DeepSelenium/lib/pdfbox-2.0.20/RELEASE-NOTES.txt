@@ -1,0 +1,89 @@
+Release Notes -- Apache PDFBox -- Version 2.0.20
+
+Introduction
+------------
+
+The Apache PDFBox library is an open source Java tool for working with PDF documents.
+
+This is an incremental bugfix release based on the earlier 2.0.19 release. It contains
+a couple of fixes and small improvements.
+
+For more details on these changes and all the other fixes and improvements
+included in this release, please refer to the following issues on the
+PDFBox issue tracker at https://issues.apache.org/jira/browse/PDFBOX.
+
+Bug
+
+[PDFBOX-756] - Some characters from TeX-created files are mapped into ASCII range 1-31
+[PDFBOX-4516] - PDFBox text and images are blurry even after rendering with high DPI
+[PDFBOX-4783] - empty annotation appearance BBox brings "Multiplying two matrices produces illegal values"
+[PDFBOX-4788] - Flattening fields results in non-widget annotations being removed
+[PDFBOX-4793] - Questionable fallback font for some embedded chinese fonts
+[PDFBOX-4794] - NPE in ExtractImages.ImageGraphicsEngine().run() (2)
+[PDFBOX-4799] - isartor-6-2-2-t02-fail-a.pdf fails on jdk15 with ArrayIndexOutOfBoundsException
+[PDFBOX-4800] - Parsing of numbers does not always terminate at actual end of number
+[PDFBOX-4801] - ArrayIndexOutOfBoundsException in PDICCBased.toRGB()
+[PDFBOX-4805] - Regression in 2.0.19
+[PDFBOX-4807] - COSString cannot be cast to COSDictionary
+[PDFBOX-4811] - Glyphs getting lost when rendering
+[PDFBOX-4814] - Wrong COSType for OCProperties after merge
+[PDFBOX-4817] - Generated XMP Metadata with other XSLT processor are XML invalid
+[PDFBOX-4819] - Optional Content Membership Dictionaries (OCMD) incorrect
+[PDFBOX-4821] - My PDF document is not printed correctly. Rendering it works.
+[PDFBOX-4822] - Off-by-one error in PDSignature.getConvertedContents()
+[PDFBOX-4824] - NullpointerException with PDFDebugger
+[PDFBOX-4825] - PDPushButton.getOnValues() throws IllegalStateException
+[PDFBOX-4828] - Encode a text using the vertical type of the font in the attachment, which succeeded in version 2.0.12 but failed in version 2.0.19
+[PDFBOX-4833] - PDColorSpace#create IOException, expected a name or array but got COSDictionary
+[PDFBOX-4849] - FlateFilter Inflater leaks
+[PDFBOX-4851] - Image rendering issue 2
+
+Improvement
+
+[PDFBOX-4784] - Possibility to provide the SecureRandom to SecurityHandler
+[PDFBOX-4804] - Remove no longer needed parameter from PDFStreamEngine#show*Glyph
+[PDFBOX-4810] - Improve CodespaceRange to be in line with the spec
+[PDFBOX-4844] - Pass resourceCache to patterns
+
+Test
+
+[PDFBOX-4854] - Add test that font can be deleted after usage
+
+Task
+
+[PDFBOX-4813] - Remove catching NullPointerException
+
+Release Contents
+----------------
+
+This release consists of a single source archive packaged as a zip file.
+The archive can be unpacked with the jar tool from your JDK installation.
+See the README.txt file for instructions on how to build this release.
+
+The source archive is accompanied by a SHA512 checksum and a PGP signature
+that you can use to verify the authenticity of your download.
+The public key used for the PGP signature can be found at
+https://www.apache.org/dist/pdfbox/KEYS.
+
+About Apache PDFBox
+-------------------
+
+Apache PDFBox is an open source Java library for working with PDF documents.
+This project allows creation of new PDF documents, manipulation of existing
+documents and the ability to extract content from documents. Apache PDFBox
+also includes several command line utilities. Apache PDFBox is published
+under the Apache License, Version 2.0.
+
+For more information, visit http://pdfbox.apache.org/
+
+About The Apache Software Foundation
+------------------------------------
+
+Established in 1999, The Apache Software Foundation provides organizational,
+legal, and financial support for more than 100 freely-available,
+collaboratively-developed Open Source projects. The pragmatic Apache License
+enables individual and commercial users to easily deploy Apache software;
+the Foundation's intellectual property framework limits the legal exposure
+of its 2,500+ contributors.
+
+For more information, visit http://www.apache.org/
